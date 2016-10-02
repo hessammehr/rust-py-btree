@@ -1,0 +1,14 @@
+[package]
+name = "rust_python"
+version = "0.1.0"
+authors = ["Hessam Mehr <hessammehr@gmail.com>", 
+           "Gabriele Lanaro <gabriele.lanaro@gmail.com"]
+
+[dependencies]
+cpython = { git = "https://github.com/dgrunwald/rust-cpython.git" }
+
+
+[lib]
+name = "btree"
+path = "src/btree.rs"
+crate-type = ["dylib"] # could be `staticlib` as well
